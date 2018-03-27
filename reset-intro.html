@@ -26,7 +26,7 @@
       <div class="page-navigation">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="lookup.html">Lookup Your UCLA Logon ID</a></li>
+          <li class="breadcrumb-item"><a href="reset.html">Reset Your Password</a></li>
         </ol>
         
         <div>
@@ -53,28 +53,46 @@
       
       <article class="page">
         <div>
-        
-          <h1>Lookup your UCLA Logon ID</h1>
-                
-          <form action="/userlookup.php" method="post" data-abide novalidate>
       
-            <label title="Enter your last name as it is on file with UCLA. Do not include any suffix." for="sn">Last Name
-            <input name="sn" type="text" maxlength="40" value="" placeholder="Bruin" id="sn" required>
-            <span class="form-error">You must enter your last name to continue.</span></label>
+          <header class="has-help">
+            <h1>Reset Your Password: <small>Confirm University Affiliation</small></h1>
+                  <div>
+                    <a href="#" title="Click or press enter to display help" class="dropdown standalone-help" data-toggle="reset-page-help" tab-index="0">
+                      <span class="icon-circle"><i class="fa fa-info"></i></span>
+                    </a>
+                  </div>
+                  
+                  <div class="dropdown-pane" id="reset-page-help" data-dropdown data-hover="true" data-hover-pane="true" data-auto-focus="true">
+                    <p>If you cannot complete the password reset form, please bring University-issued photo identification to the Bruin OnLine Help Desk located in Suite 124, Kerckhoff Hall. If you are not able to visit the Help Desk, please fax in a completed copy of the <a href="/files/service_request.pdf">UCLA Logon Service Request Form</a>, with all required supporting documentation.</p>
+                  </div>
+          </header>
       
-            <label title="Enter the date you were born." for="dob">Date of Birth
-            <input name="dob" type="date" placeholder="My Birthday" maxlength="10" value="" id="dob" required>
-            <span class="form-error">You must use a valid date format.</span></label>
-      
-            <label title="A valid contact email address is required to continue" for="email">UCLA Official Email Address
-            <input name="email" type="email" placeholder="joe.bruin@gmail.com" id="email">
-            <span class="form-error">This doesn't look like a valid email address.</span></label>
-      
-            <button type="submit" class="primary-button">Lookup your Logon ID</button> <button type="submit" class="button">Cancel</button>
+          <h2>Are you affiliated with UCLA?</h2>
+          
+          <div class="affiliation-choice">
+            <h3>You're affiliated with UCLA if you have a 9-digit UCLA ID.</h3>
             
-            <p><span class="message-fail"><a href="lookup-fail.html">(fail)</a></span> <span class="message-success"><a href="lookup-success-nouid.html">(success)</a></span></p>
+            <p>Users with a 9-digit UCLA ID include:</p>
+            <ul>
+              <li>New UCLA Students (including admitted applicants)</li>
+              <li>UCLA Applicants on the waitlist</li>
+              <li>Current and Former UCLA Students (including alumni)</li>
+              <li>UCLA Summer Session Only Students (new, current, or former)</li>
+              <li>UCLA Faculty or Staff Members</li>
+              <li>UCOP or UC Merced Staff Members</li>
+              <li>Contractors</li>
+            </ul>
+            
+            <p><a href="reset.html" class="button primary-button">I am affiliated with UCLA</a></p>
+          </div>
+          
+          <div class="affiliation-choice">
+            <h3>You're not affiliated with UCLA if you do not have a 9-digit UCLA ID Number.</h3>
+            
+            <p>Accounts created without a UCLA ID number can be used to authenticate to many UCLA applications but may not have access. Unaffiliated accounts generally aren't eligible to receive campus services.</p>
       
-          </form>
+            <p><a href="reset-not.html" class="button primary-button">I am not affiliated with UCLA</a></p>
+          </div>
       
         </div>
       </article>

@@ -16,17 +16,22 @@
   <div class="page-wrap">
 
     <header class="page-header" role="banner">
-      <section class="page-header-contents">
-        <span class="logo"><a href="./"><img src="assets/img/logo.png" alt="UCLA"></a></span>
+      <section class="page-header-contents logged-in">
+        <span class="logo"><a href="index-in.html"><img src="assets/img/logo.png" alt="UCLA MY Logon"></a></span>
+        <div class="logged-in-info">
+          <p class="note-that">You're logged in as: Jen Burin</p>
+          <p><a href="./">Logout</a></p>
+        </div>
       </section>
     </header>
-  
+
     <div class="page-content">
       
       <div class="page-navigation">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="lookup.html">Lookup Your UCLA Logon ID</a></li>
+          <li class="breadcrumb-item"><a href="/index-in.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="manage-accounts.html">Manage Your UCLA Logon ID</a></li>
+          <li class="breadcrumb-item"><a href="mfa-device-select-new.html">Multifactor Authentication</a></li>    
         </ol>
         
         <div>
@@ -49,36 +54,34 @@
         </div>
         
       </div>
-      
-      
-      <article class="page">
-        <div>
+
+      <div class="title-bar" data-responsive-toggle="nav" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle></button>
+      </div>
         
-          <h1>Lookup your UCLA Logon ID</h1>
-                
-          <form action="/userlookup.php" method="post" data-abide novalidate>
+        <nav>
+          <ul class="menu">
+            <li class="expanded"><a href="manage-accounts.html">Back to My UCLA Logon ID</a></li>
+              <ul>
+                <li class="active"><a href="#">Multifactor Authentication Management</a></li>
+              </ul>
+            </li>
+            <li class="mobile-only"><a href="#">Logout</a></li>
+            <li class="mobile-only"><a href="#">Get Help</a></li>
+          </ul>
+        </nav>
       
-            <label title="Enter your last name as it is on file with UCLA. Do not include any suffix." for="sn">Last Name
-            <input name="sn" type="text" maxlength="40" value="" placeholder="Bruin" id="sn" required>
-            <span class="form-error">You must enter your last name to continue.</span></label>
       
-            <label title="Enter the date you were born." for="dob">Date of Birth
-            <input name="dob" type="date" placeholder="My Birthday" maxlength="10" value="" id="dob" required>
-            <span class="form-error">You must use a valid date format.</span></label>
+      <article class="message terse">
       
-            <label title="A valid contact email address is required to continue" for="email">UCLA Official Email Address
-            <input name="email" type="email" placeholder="joe.bruin@gmail.com" id="email">
-            <span class="form-error">This doesn't look like a valid email address.</span></label>
+        <h1>Just a moment!</h1>
       
-            <button type="submit" class="primary-button">Lookup your Logon ID</button> <button type="submit" class="button">Cancel</button>
-            
-            <p><span class="message-fail"><a href="lookup-fail.html">(fail)</a></span> <span class="message-success"><a href="lookup-success-nouid.html">(success)</a></span></p>
-      
-          </form>
-      
-        </div>
+        <div id="loading-spinner"></div>
+        
+        <p>If things seem stuck, try again.</p>
+          
       </article>
-    
+          
     </div>
   
   </div>

@@ -1,0 +1,152 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCLA Logon</title>
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+  
+  <div class="page-wrap">
+
+    <header class="page-header" role="banner">
+      <section class="page-header-contents">
+        <span class="logo"><a href="./"><img src="assets/img/logo.png" alt="UCLA"></a></span>
+      </section>
+    </header>
+  
+    <div class="page-content">
+      
+      <div class="page-navigation">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="reset.html">Reset Your Password</a></li>
+        </ol>
+        
+        <div>
+          <a href="#" title="Click or press enter to display help" class="page-help dropdown" data-toggle="default-page-help" tab-index="0" aria-role="link">
+            <span class="page-help-desc">get help <span class="icon-circle"><i class="fa fa-info"></i></span></span>
+          </a>
+        </div>
+        
+        <div class="dropdown-pane" id="default-page-help" data-dropdown data-hover="true" data-hover-pane="true" data-auto-focus="true">
+          <ul class="listless">
+            <li>Contact the Bruin OnLine Help Desk
+              <ul>
+                <li><a href="mailto:consult@ucla.edu">consult@ucla.edu</a></li>
+                <li>310-267-HELP (4357)</li>
+              </ul>
+            </li>
+          </ul>
+          
+          <p>Check <a href="#"; target='tutorial'>Frequently Asked Questions</a>.</p>
+        </div>
+        
+      </div>
+      
+      
+      <article class="page">
+        <div>
+      
+          <header class="has-help">
+            <h1>Reset Your Password: <small>Validate Identity</small></h1> 
+                  <div>
+                    <a href="#" title="Click or press enter to display help" class="dropdown standalone-help" data-toggle="reset-page-help" tab-index="0">
+                      <span class="icon-circle"><i class="fa fa-info"></i></span>
+                    </a>
+                  </div>
+                  
+                  <div class="dropdown-pane" id="reset-page-help" data-dropdown data-hover="true" data-hover-pane="true" data-auto-focus="true">
+                    <h3>First & Last Name</h3>
+                      
+                    <p>These should be as you submitted them on official records, not a nickname or preferred first name that you commonly use.</p>
+                        
+                    <h3>You can find your UID:</h3>
+                    
+                    <ul>
+                      <li>on your online or paper letter of admission (new students, waitlisted applicants).</li>
+                      <li>on your BruinCard (current students, alumni, faculty, staff, contractor).</li>
+                      <li>on your UCLA transcript (current students, alumni).</li>
+                      <li>on your paycheck stub or online earnings statement (faculty, staff).</li>
+                    </ul>
+                    
+                    <p>If you cannot complete the form please bring photo identification that clearly displays both your full name and date of birth (Driver's License, Passport, or other government issued ID) to the Bruin OnLine Help Desk located in Suite 124, Kerckhoff Hall. If you are not able to visit the Help Desk, please fax in a completed copy of the <a href="assets/files/service_request.pdf">UCLA Logon Service Request Form</a>, with all required supporting documentation.</p>
+                  </div>
+            </div>
+          </header>
+      
+          <p>To reset your password, enter your UCLA Logon ID below then answer your challenge question. If you can't remember your UCLA Logon ID, you can <a href="lookup.html">look it up</a>!</p>
+      
+          <form action="/passreset.php" method="post" data-abide novalidate>
+      
+            <fieldset>
+              <label class="help" for="uid">UCLA Logon ID
+              <input name="uid" type="text" pattern="[0-9]{9}" id="uid" placeholder="janebruin42" autofocus required>
+              <span class="form-error">Your UCLA ID number is exactly 9 numbers long.</span></label>
+              
+              <label title="Enter the date you were born." for="dob">Date of Birth
+              <input name="dob" type="date" placeholder="My Birthday" maxlength="10" value="" id="dob" required>
+              <span class="form-error">You must use a valid date format.</span></label>
+        
+              <label title="Your UCLA ID Number is nine (9) digits long and is printed on your UCLA ID Card." for="uclaid">9-Digit UCLA ID Number
+              <input name="uclaid" pattern="[0-9]{9}" type="password" placeholder="123-456-789" value="" id="uclaid">
+              <span class="form-error">Your UCLA ID number is exactly 9 numbers long.</span></label>
+      
+              <button class="primary-button" type="submit">Continue to challenge phrase</button> <button type="submit" class="button">Cancel</button>
+            </fieldset>
+      
+            <p><span class="logon-success message-success"><a href="reset-2.html">(success)</a></span> <span class="message-fail"><a href="reset-fail.html">(fail)</a></span>  <span class="message-fail"><a href="reset-fail-no-phrase.html">(oops, no challenge phrase)</a></span> </p>
+      
+            <div id="ajax-container"></div>
+      
+          </form>
+              
+        </div>
+      </article>
+      
+    
+    </div>
+  
+  </div>
+  
+    <footer role="contentinfo" class="iam-footer">
+      <div class="footer-wrapper">
+  
+        <div class="iam-footer-content footer-cta">
+          <div class="cta-content">
+            <header>Get Answers</header>
+            <p>If you have a question, take a look to see if it's been answered in the knowledge base.</p>
+          </div>
+          <p class="cta-button"><a href="https://help.bol.ucla.edu/" target="_blank">Knowledge Base</a></p>
+      	</div>
+      	
+        <div class="iam-footer-content footer-cta">
+          <div class="cta-content">
+            <header>Get Help</header>
+            <p>Contact Bruin OnLine, email us at <a href="mailto:consult@ucla.edu">consult@ucla.edu</a>, or give us a call at 310-267-<strong>HELP</strong>.</p>
+          </div>
+          <p class="cta-button"><a href="https://www.it.ucla.edu/bol/contact-bruin-online" target="_blank">Bruin OnLine Help</a></p>
+      	</div>
+      	
+        <div class="iam-footer-content footer-cta">
+          <div class="cta-content">
+            <header>Know the Rules</header>
+            <p>Learn more about the policies and regulations at UCLA.</p>
+          </div>
+          <p class="cta-button"><a href="/ucla-logon-mocks/cms-policies.html" target="_blank">Privacy, Security & Legal</a></p>
+      	</div>
+        
+      </div>
+    </footer>
+  
+  <script src="assets/js/app.js"></script>
+  
+</body>
+
+</html>

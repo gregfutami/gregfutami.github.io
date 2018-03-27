@@ -53,9 +53,13 @@
       
       <article class="page">
         <div>
-        
+      
           <h1>Lookup your UCLA Logon ID</h1>
-                
+      
+          <h2 class="alert alert-danger">Your UCLA Logon ID wasn't found.</h2>
+      
+          <p class="error-title">Try validating your identity again. If you continue having issues <a href="https://www.it.ucla.edu/bol/contact-bruin-online" target="_blank">contact Bruin OnLine</a>. If you don't have a UCLA Logon ID you can <a href="create.html">create a UCLA Logon ID</a></p>
+      
           <form action="/userlookup.php" method="post" data-abide novalidate>
       
             <label title="Enter your last name as it is on file with UCLA. Do not include any suffix." for="sn">Last Name
@@ -66,18 +70,19 @@
             <input name="dob" type="date" placeholder="My Birthday" maxlength="10" value="" id="dob" required>
             <span class="form-error">You must use a valid date format.</span></label>
       
-            <label title="A valid contact email address is required to continue" for="email">UCLA Official Email Address
-            <input name="email" type="email" placeholder="joe.bruin@gmail.com" id="email">
-            <span class="form-error">This doesn't look like a valid email address.</span></label>
+            <label title="Your UCLA ID Number is nine (9) digits long and is printed on your UCLA ID Card." for="uclaid">9 Digit UCLA ID Number
+            <input name="uclaid" pattern="[0-9]{9}" type="password" placeholder="123-456-789" value="" id="uclaid">
+            <span class="form-error">Your UCLA ID number is exactly 9 numbers long.</span></label>
       
             <button type="submit" class="primary-button">Lookup your Logon ID</button> <button type="submit" class="button">Cancel</button>
             
-            <p><span class="message-fail"><a href="lookup-fail.html">(fail)</a></span> <span class="message-success"><a href="lookup-success-nouid.html">(success)</a></span></p>
+            <p><span class="message-fail"><a href="lookup-fail.html">(fail)</a></span> <span class="message-success"><a href="lookup-success.html">(success)</a></span></p>
       
           </form>
       
         </div>
       </article>
+      
     
     </div>
   

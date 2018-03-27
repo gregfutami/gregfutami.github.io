@@ -26,9 +26,7 @@
       <div class="page-navigation">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="lookup.html">Lookup Your UCLA Logon ID</a></li>
         </ol>
-        
         <div>
           <a href="#" title="Click or press enter to display help" class="page-help dropdown" data-toggle="default-page-help" tab-index="0" aria-role="link">
             <span class="page-help-desc">get help <span class="icon-circle"><i class="fa fa-info"></i></span></span>
@@ -53,31 +51,51 @@
       
       <article class="page">
         <div>
-        
-          <h1>Lookup your UCLA Logon ID</h1>
-                
-          <form action="/userlookup.php" method="post" data-abide novalidate>
       
-            <label title="Enter your last name as it is on file with UCLA. Do not include any suffix." for="sn">Last Name
-            <input name="sn" type="text" maxlength="40" value="" placeholder="Bruin" id="sn" required>
-            <span class="form-error">You must enter your last name to continue.</span></label>
+          <ol id="form-step-bar">
+            <li class="form-step-done">Affiliation</li>
+            <li class="form-step-done">Identity</li>
+            <li class="form-step-done">Account Creation</li>
+            <li class="form-step-done">Recovery Options</li>
+            <li class="form-step-doing">Enroll in BruinAlert</li>
+            <li class="form-step-todo">Enroll in MFA</li>
+          </ol>
       
-            <label title="Enter the date you were born." for="dob">Date of Birth
-            <input name="dob" type="date" placeholder="My Birthday" maxlength="10" value="" id="dob" required>
-            <span class="form-error">You must use a valid date format.</span></label>
+          <h1>Create a UCLA Logon ID: <small>Enroll in BruinAlert</small></h1>
       
-            <label title="A valid contact email address is required to continue" for="email">UCLA Official Email Address
-            <input name="email" type="email" placeholder="joe.bruin@gmail.com" id="email">
+            <h2>BruinAlert Enrollment</h2>
+      
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            
+          <form action="/activate.php" method="post" data-abide novalidate>
+            <label for="email">BruinAlert Contact Email Address
+            <input name="email" type="email" placeholder="joe.bruin@gmail.com" value="" id="email" required>
             <span class="form-error">This doesn't look like a valid email address.</span></label>
       
-            <button type="submit" class="primary-button">Lookup your Logon ID</button> <button type="submit" class="button">Cancel</button>
-            
-            <p><span class="message-fail"><a href="lookup-fail.html">(fail)</a></span> <span class="message-success"><a href="lookup-success-nouid.html">(success)</a></span></p>
+            <button type="submit" class="primary-button">Continue</button>
+          </form>
+      
+            <label for="opt-out-bruinalert" data-open="bruinalert-confirm"><input id="opt-out-bruinalert" type="checkbox">I choose to not enroll in BruinAlert at this time.</label>
+      
+            <div id="bruinalert-confirm" data-reveal data-close-on-click="false" data-close-on-esc="false">
+              <h1>Are you Sure?</h1>
+      
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      
+              <form>
+                <label><input type="radio" name="mfa-confirm-final" value="opt-out" required>Opt out: No, I do not wish to enroll in BruinAlert at this time.</label>
+                <label><input type="radio" name="mfa-confirm-final" value="enrollt" required>Enroll: I would like to enroll in BruinAlert.</label>
+                <button class="button primary-button">Confirm</button>
+              </form>
+            </div>
+      
+            <p><span class="message-success"><a href="create-new-logon6.html">(next)</a></span></p>
       
           </form>
       
         </div>
       </article>
+      
     
     </div>
   
