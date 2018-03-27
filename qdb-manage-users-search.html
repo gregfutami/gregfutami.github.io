@@ -1,0 +1,114 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCLA Logon</title>
+  <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+
+<body>
+  
+  <div class="page-wrap">
+
+    <header class="page-header" role="banner">
+      <section class="page-header-contents logged-in">
+        <span class="logo"><a href="/admin"><img src="../assets/img/logo.png" alt="UCLA MY Logon"></a></span>
+        <div class="logged-in-info">
+          <p class="note-that">You're logged in as: Jen Burin</p>
+          <p><a href="./">Logout</a></p>
+        </div>
+      </section>
+    </header>
+    
+    <div class="page-content">
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Admin Home</a></li>
+        <li class="breadcrumb-item"><a href="qdb-manage-users.html">QDB [foo]</a></li>
+      </ol>
+      <div>
+        <a href="#" title="Click or press enter to display help" class="page-help dropdown" data-toggle="default-page-help" tab-index="0" aria-role="link">
+          <span class="page-help-desc">get help <span class="icon-circle"><i class="fa fa-info"></i></span></span>
+        </a>
+      </div>
+      
+      <div class="dropdown-pane" id="default-page-help" data-dropdown data-hover="true" data-hover-pane="true" data-auto-focus="true">
+        <ul class="listless">
+          <li>Contact the Bruin OnLine Help Desk
+            <ul>
+              <li><a href="mailto:consult@ucla.edu">consult@ucla.edu</a></li>
+              <li>310-267-HELP (4357)</li>
+            </ul>
+          </li>
+        </ul>
+        
+        <p>Check <a href="#"; target='tutorial'>Frequently Asked Questions</a>.</p>
+      </div>
+      
+      
+      
+      <article class="page">
+        <div>
+        
+          <h1>Manage QDB User</h1>
+                
+          <form action="/admin/qdb-index.html" method="get" data-abide novalidate>
+      
+            <label title="Enter your last name as it is on file with UCLA. Do not include any suffix." for="sn">
+            <input name="search" type="text" maxlength="40" value="" placeholder="Search" id="search" required>
+            <span class="form-error">You must enter your last name to continue.</span></label>
+      
+      
+            <button type="submit" class="primary-button">Search</button> <button type="submit" class="button">Cancel</button>
+            
+            <p><span class="message-fail"><a href="qdb-index.html">(cancel)</a></span> <span class="message-success"><a href="qdb-manage-users-results.html">(search results)</a></span></p>
+      
+          </form>
+      
+        </div>
+      </article>
+
+    </div>
+  
+  </div>
+  
+    <footer role="contentinfo" class="iam-footer">
+      <div class="footer-wrapper">
+  
+        <div class="iam-footer-content footer-cta">
+          <div class="cta-content">
+            <header>Get Answers</header>
+            <p>If you have a question, take a look to see if it's been answered in the knowledge base.</p>
+          </div>
+          <p class="cta-button"><a href="https://help.bol.ucla.edu/" target="_blank">Knowledge Base</a></p>
+      	</div>
+      	
+        <div class="iam-footer-content footer-cta">
+          <div class="cta-content">
+            <header>Get Help</header>
+            <p>Contact Bruin OnLine, email us at <a href="mailto:consult@ucla.edu">consult@ucla.edu</a>, or give us a call at 310-267-<strong>HELP</strong>.</p>
+          </div>
+          <p class="cta-button"><a href="https://www.it.ucla.edu/bol/contact-bruin-online" target="_blank">Bruin OnLine Help</a></p>
+      	</div>
+      	
+        <div class="iam-footer-content footer-cta">
+          <div class="cta-content">
+            <header>Know the Rules</header>
+            <p>Learn more about the policies and regulations at UCLA.</p>
+          </div>
+          <p class="cta-button"><a href="/ucla-logon-mocks/cms-policies.html" target="_blank">Privacy, Security & Legal</a></p>
+      	</div>
+        
+      </div>
+    </footer>
+  
+  <script src="../assets/js/app.js"></script>
+  
+</body>
+
+</html>
