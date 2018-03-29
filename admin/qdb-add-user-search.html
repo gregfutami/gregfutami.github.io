@@ -26,30 +26,6 @@
     </header>
     
     <div class="page-content">
-
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Admin Home</a></li>
-        <li class="breadcrumb-item"><a href="qdb-manage-users.html">QDB [foo]</a></li>
-      </ol>
-      <div>
-        <a href="#" title="Click or press enter to display help" class="page-help dropdown" data-toggle="default-page-help" tab-index="0" aria-role="link">
-          <span class="page-help-desc">get help <span class="icon-circle"><i class="fa fa-info"></i></span></span>
-        </a>
-      </div>
-      
-      <div class="dropdown-pane" id="default-page-help" data-dropdown data-hover="true" data-hover-pane="true" data-auto-focus="true">
-        <ul class="listless">
-          <li>Contact the Bruin OnLine Help Desk
-            <ul>
-              <li><a href="mailto:consult@ucla.edu">consult@ucla.edu</a></li>
-              <li>310-267-HELP (4357)</li>
-            </ul>
-          </li>
-        </ul>
-        
-        <p>Check <a href="#"; target='tutorial'>Frequently Asked Questions</a>.</p>
-      </div>
-      
       
       
       <div class="page">
@@ -57,30 +33,46 @@
             
           <h1>Create a QDB User Account</h1>
           
-          <h2>Search Existing User by UCLA UID</h2>
-          
-          <form>
-        		<label for="lookup-id-uid">Enter User's UCLA UID</label>
-            <input id="lookup-id-uid" name="lookup-id-uid" class="hero-form-input" type="text" placeholder="123456789" aria-required="true" pattern=".{9,9}" required autofocus data-errormessage="Logon IDs must be between 3 and 15 characters long">
-        		
-            <button type="submit" class="primary-button">Lookup this UID</button> <button type="submit" class="button">Cancel</button>
-          </form>
+          <div class="affiliation-choice">
+            <h2>Search Existing User by UCLA UID</h2>
       
-          <br/>
-          
-          <h2>Manually Create New QDBID</h2>
-          <form>
-            <button type="submit" class="primary-button">Create New QDBID</button> <button type="submit" class="button">Cancel</button>
-          </form>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+            <form>
+          		<label for="lookup-id-uid">Enter User's UCLA UID</label>
+              <input id="lookup-id-uid" name="lookup-id-uid" class="hero-form-input" type="text" placeholder="123456789" aria-required="true" pattern=".{9,9}" required autofocus data-errormessage="Logon IDs must be between 3 and 15 characters long">
+          		
+              <button type="submit" class="primary-button">Lookup this UID</button> <button type="submit" class="button">Cancel</button>
+            </form>
+            <p>
+              <span class="message-success"><a href="qdb-add-user-create-existing.html">(Lookup UID)</a></span>
+              <span class="message-fail"><a href="qdb-index.html">(Cancel)</a></span> 
+            </p>
+          </div>
       
-          <p>
-              <span class="message-success"><a href="qdb-add-user-create-existing.html">(Create From Existing Record)</a></span>
+          <div>
+          
+        </div>
+      
+      <!--     <br/> -->
+          
+          <div class="affiliation-choice">
+            <h2>Manually Create New QDBID</h2>
+      
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+            <form>
+              <button type="submit" class="primary-button">Create New QDBID</button> <button type="submit" class="button">Cancel</button>
+            </form>
+            <p>
               <span class="message-success"><a href="qdb-add-user-create-manual.html">(Create Manually)</a></span>
               <span class="message-fail"><a href="qdb-index.html">(Cancel)</a></span> 
             </p>
-      
+          </div>
         </div>
       </div>
+      
+      
       
 
     </div>

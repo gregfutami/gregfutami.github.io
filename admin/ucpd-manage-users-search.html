@@ -17,7 +17,7 @@
 
     <header class="page-header" role="banner">
       <section class="page-header-contents logged-in">
-        <span class="logo"><a href="/admin"><img src="../assets/img/logo.png" alt="UCLA MY Logon"></a></span>
+        <span class="logo"><a href="index-in.html"><img src="../assets/img/logo.png" alt="UCLA MY Logon"></a></span>
         <div class="logged-in-info">
           <p class="note-that">You're logged in as: Jen Burin</p>
           <p><a href="./">Logout</a></p>
@@ -31,68 +31,24 @@
       <article class="page">
         <div>
         
-          <h1>Manage App ID</h1>
-          <div class="search-results">
-            <div class="qdb-account-results">
+          <h1>Search Users</h1>
+                
+          <form action="/admin/qdb-index.html" method="get" data-abide novalidate>
       
-              <dl>
-                <dt>Application Name</dt>
-                <dd>Bruin Feeding System Application</dd>
-                <dt>Application ID</dt>
-                <dd>mgrbfs</dd>
-                <dt>Dept Code</dt>
-                <dd>1400</dd>
-              </dl>
-              
-              <dl>
-                <dt>Password</dt>
-                <dd>P@ssword1234abcd</dd>
-              </dl>
-              
-              <dl>
-                <dt>Contact Name</dt>
-                <dd>Bono Vox</dd>
-                <dt>Contact Email Address</dt>
-                <dd>bv@it.ucla.edu</dd>
-                <dt>Contact Phone</dt>
-                <dd>(310) 888-2525</dd>
-              </dl>
-              
-              <dl>
-                <dt>Backup Contact Name</dt>
-                <dd>Sarah Connor</dd>
-                <dt>Backup Contact Email Address</dt>
-                <dd>sc@it.ucla.edu</dd>
-                <dt>Backup Contact Phone</dt>
-                <dd>(310) 888-4040</dd>
-              </dl>
-              
-              <dl>
-              <dt>Comments</dt>
-              <dd>this is an old logon ID</dd>
-              </dl>
+            <label title="Enter your last name as it is on file with UCLA. Do not include any suffix." for="sn">
+            <input name="search" type="text" maxlength="40" value="" placeholder="Search" id="search" required>
+            <span class="form-error">You must enter your last name to continue.</span></label>
+      
+      
+            <button type="submit" class="primary-button">Search</button> <button type="submit" class="button">Cancel</button>
             
-            </div>
+            <p><span class="message-fail"><a href="ucpd-users-search.html">(cancel)</a></span> <span class="message-success"><a href="qdb-manage-users-results.html">(search results)</a></span></p>
       
-            <h3>Unlock Account</h3>
-            <button type="submit" class="button">Unlock Account</button> 
-            <button type="submit" class="cancel-button">Cancel</button>
-      
-            <p>
-              <span class="message-success"><a href="qdb-manage-appid.html">(Unlock Account)</a></span>
-              <span class="message-fail"><a href="qdb-manage-appid.html">(Cancel)</a></span> 
-            </p>
-            
-          </div>
-          
+          </form>
       
         </div>
-      
-        
-        
-      
       </article>
-
+          
     </div>
   
   </div>

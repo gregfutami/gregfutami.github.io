@@ -26,30 +26,6 @@
     </header>
     
     <div class="page-content">
-
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Admin Home</a></li>
-        <li class="breadcrumb-item"><a href="qdb-manage-users.html">QDB [foo]</a></li>
-      </ol>
-      <div>
-        <a href="#" title="Click or press enter to display help" class="page-help dropdown" data-toggle="default-page-help" tab-index="0" aria-role="link">
-          <span class="page-help-desc">get help <span class="icon-circle"><i class="fa fa-info"></i></span></span>
-        </a>
-      </div>
-      
-      <div class="dropdown-pane" id="default-page-help" data-dropdown data-hover="true" data-hover-pane="true" data-auto-focus="true">
-        <ul class="listless">
-          <li>Contact the Bruin OnLine Help Desk
-            <ul>
-              <li><a href="mailto:consult@ucla.edu">consult@ucla.edu</a></li>
-              <li>310-267-HELP (4357)</li>
-            </ul>
-          </li>
-        </ul>
-        
-        <p>Check <a href="#"; target='tutorial'>Frequently Asked Questions</a>.</p>
-      </div>
-      
       
       
       <div class="page">
@@ -62,7 +38,7 @@
           <form>
             
             <fieldgroup>
-              <legend>Core Information</legend>
+              <legend>Application Information</legend>
               
               <label>Application Name <span class="required-form-element" title="This field is Required">*</span>
                 <input name="QDB.app_name" id="app_name" type="text" value="BruinApp" size="32">
@@ -74,10 +50,6 @@
       
               <label>Dept Code <span class="required-form-element" title="This field is Required">*</span>
                 <input name="QDB.dept_code" id="dept_code" type="text" value="1400" size="4" maxlength="4">
-              </label>
-              
-              <label>Web URL
-                <input name="QDB.web_url" type="text" size="50" value="" maxlength="255">
               </label>
               
             </fieldgroup>
@@ -125,11 +97,13 @@
               
             </fieldgroup>
             
-            <h2>Comments</h2>
-          
-            <label>Comments
-              <textarea name="QDB.comments" cols="55" rows="5" placeholder="Any additional information that may be useful">this is an old logon ID</textarea>
-            </label>
+            <fieldgroup>
+              <legend>Comments</legend>
+            
+              <label>
+                <textarea name="QDB.comments" cols="55" rows="5" placeholder="Any additional information that may be useful"></textarea>
+              </label>
+            <fieldgroup>
           
             <button type="submit" class="primary-button">Update this AppID</button> <button type="submit" class="button">Cancel</button>
           
