@@ -17,7 +17,7 @@
 
     <header class="page-header" role="banner">
       <section class="page-header-contents logged-in">
-        <span class="logo"><a href="/admin"><img src="../assets/img/logo.png" alt="UCLA MY Logon"></a></span>
+        <span class="logo"><a href="/admin"><img src="../assets/img/logo2.png" alt="UCLA QDB Admin Tool"></a></span>
         <div class="logged-in-info">
           <p class="note-that">You're logged in as: Jen Burin</p>
           <p><a href="./">Logout</a></p>
@@ -26,18 +26,25 @@
     </header>
     
     <div class="page-content">
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="qdb-index.html">Admin Home</a></li>
+        <li class="breadcrumb-item"><a href="qdb-manage-users-search.html">Manage User</a></li>
+      </ol>
       
       
       <article class="page">
         <div>
         
           <h1>Manage QDB User</h1>
+      
+          <p>Search for users by UID, first name, last name, or QDBID.</p>
                 
           <form action="/userlookup.php" method="post" data-abide novalidate>
       
-            <label title="Enter your last name as it is on file with UCLA. Do not include any suffix." for="sn">
-            <input name="sn" type="text" maxlength="40" value="" placeholder="Search" id="sn" required>
-            <span class="form-error">You must enter your last name to continue.</span></label>
+            <label title="Search for users by UID, first name, last name, or QDBID." for="sn">
+            <input name="search" type="text" maxlength="40" value="" placeholder="Search" id="search" required>
+            <span class="form-error">You must enter a search criteria</span></label>
       
       
             <button type="submit" class="primary-button">Search</button> <button type="submit" class="button">Cancel</button>
@@ -53,10 +60,11 @@
         
             <thead>
               <tr>
-                <th>ID</th>
+                <th>QDBID</th>
                 <th>First Name</th>
                 <th>Last Name</th>
-                <th>Dept Code</th>
+                <th>UID</th>
+                <th>Department Code</th>
               </tr>
             </thead>
         
@@ -65,63 +73,72 @@
                 <td>acrff</td>
                 <td>Final</td>
                 <td>Fantasy</td>
-                <td>9041</td>
+                <td>904159041</td>
+                <td>4100</td>
               </tr>
         
               <tr>
                 <td>acbruin</td>
                 <td>Bruin</td>
                 <td>Baffle</td>
-                <td>2014</td>
+                <td>201459041</td>
+                <td>4100</td>
               </tr>
         
               <tr>
                 <td>acfoo</td>
                 <td>Foo Bar</td>
                 <td>Bar Bar Barbaran</td>
-                <td>120</td>
+                <td>120590419</td>
+                <td>2492</td>
               </tr>
         
               <tr>
                 <td>acrff</td>
                 <td>Final</td>
                 <td>Fantasy</td>
-                <td>9041</td>
+                <td>904159041</td>
+                <td>4100</td>
               </tr>
         
               <tr>
                 <td>acbruin</td>
                 <td>Bruin</td>
                 <td>Baffle</td>
-                <td>2014</td>
+                <td>201459041</td>
+                <td>1941</td>
               </tr>
         
               <tr>
                 <td>acfoo</td>
                 <td>Foo Bar</td>
                 <td>Bar Bar Barbaran</td>
-                <td>120</td>
+                <td>12059041</td>
+                <td>2017</td>
               </tr>
               
               <tr>
                 <td>acrff</td>
                 <td>Final</td>
                 <td>Fantasy</td>
-                <td>9041</td>
+                <td>904159041</td>
+                <td>4100</td>
               </tr>
         
               <tr>
                 <td>acbruin</td>
                 <td>Bruin</td>
                 <td>Baffle</td>
-                <td>2014</td>
+                <td>201459041</td>
+                <td>4100</td>
               </tr>
         
               <tr>
                 <td>acfoo</td>
                 <td>Foo Bar</td>
                 <td>Bar Bar Barbaran</td>
-                <td>120</td>
+                <td>120959041</td>
+                <td>4100</td>
               </tr>
             </tbody>
         
@@ -139,30 +156,28 @@
       <div class="footer-wrapper">
   
         <div class="iam-footer-content footer-cta">
-          <div class="cta-content">
-            <header>Get Answers</header>
-            <p>If you have a question, take a look to see if it's been answered in the knowledge base.</p>
+          <!-- <div class="cta-content">
+            <header>Get Help</header>
+            <p>Contact IAMUCLA, email us at <a href="mailto:iamucla@ucla.edu">iamucla@ucla.edu</a></p>
           </div>
-          <p class="cta-button"><a href="https://help.bol.ucla.edu/" target="_blank">Knowledge Base</a></p>
-      	</div>
-      	
+          <p class="cta-button"><a href="https://www.it.ucla.edu/iamucla/" target="_blank">IAMUCLA</a></p> -->
+        </div>
+  
         <div class="iam-footer-content footer-cta">
           <div class="cta-content">
             <header>Get Help</header>
-            <p>Contact Bruin OnLine, email us at <a href="mailto:consult@ucla.edu">consult@ucla.edu</a>, or give us a call at 310-267-<strong>HELP</strong>.</p>
+            <p>Contact IAMUCLA, email us at <a href="mailto:iamucla@ucla.edu">iamucla@ucla.edu</a></p>
           </div>
-          <p class="cta-button"><a href="https://www.it.ucla.edu/bol/contact-bruin-online" target="_blank">Bruin OnLine Help</a></p>
+          <p class="cta-button"><a href="https://www.it.ucla.edu/iamucla/" target="_blank">IAMUCLA</a></p>
       	</div>
-      	
+  
         <div class="iam-footer-content footer-cta">
-          <div class="cta-content">
-            <header>Know the Rules</header>
-            <p>Learn more about the policies and regulations at UCLA.</p>
+          <!-- <div class="cta-content">
+            <header>Get Help</header>
+            <p>Contact IAMUCLA, email us at <a href="mailto:iamucla@ucla.edu">iamucla@ucla.edu</a></p>
           </div>
-          <p class="cta-button"><a href="/ucla-logon-mocks/cms-policies.html" target="_blank">Privacy, Security & Legal</a></p>
-      	</div>
-        
-      </div>
+          <p class="cta-button"><a href="https://www.it.ucla.edu/iamucla/" target="_blank">IAMUCLA</a></p> -->
+        </div>
     </footer>
   
   <script src="../assets/js/app.js"></script>

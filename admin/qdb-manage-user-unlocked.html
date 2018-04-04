@@ -36,23 +36,63 @@
       <article class="page">
         <div>
         
-          <h1>Manage QDB Users</h1>
-                
-          <form action="/admin/qdb-index.html" method="get" data-abide novalidate>
+          <h1>Manage QDB User</h1>
+          <div class="search-results">
+            <div class="qdb-account-results">
       
-            <p>Search for users by UID, first name, last name, or QDBID.</p>
-      
-            <label title="Search for users by UID, first name, last name, or QDBID." for="sn">
-            <input name="search" type="text" maxlength="40" value="" placeholder="Search" id="search" required>
-            <span class="form-error">You must enter a search criteria</span></label>
-      
-      
-            <button type="submit" class="primary-button">Search</button> <button type="submit" class="button">Cancel</button>
+              <!-- User Info -->
+              <dl>
+                <dt>QDBID</dt>
+                <dd>acjmb</dd>
+                <dt>First Name</dt>
+                <dd>Jen</dd>
+                <dt>Last Name</dt>
+                <dd>Burin</dd>
+                <dt>UID</dt>
+                <dd>123456789</dd>
+              </dl>
+              <!-- Contact Info -->
+              <dl> 
+                <dt>Campus Phone</dt>
+                <dd>3101234567</dd>
+                <dt>E-Mail Address</dt>
+                <dd>bruinlife4eva@gmail.com</dd>
+              <!--   <dt>Department Code</dt>
+                <dd>4100</dd>
+                <dt>Department Title</dt>
+                <dd>ADMINISTRATIVE INFORMATION SYSTEMS</dd>
+                <dt>Work Title</dt>
+                <dd>PROGR ANL 3</dd>
+                <dt>Employee Status</dt>
+                <dd>A-</dd> -->
+              </dl>
+              
+              <!-- QDB Info -->
+              <dl> 
+                <dt>QDB Roles</dt>
+                <dd>[public]</dd>
+                <dt>Creation Date</dt>
+                <dd>March 24, 2017 2:35 PM</dd>
+              </dl>
+              
             
-            <p><span class="message-fail"><a href="qdb-index.html">(cancel)</a></span> <span class="message-success"><a href="qdb-manage-users-results.html">(search results)</a></span></p>
+            </div>
       
-          </form>
+            <!-- <button type="submit" class="button">Unlock Account</button>  -->
+            <button type="submit" class="button">Reset Password</button>
+            <button type="submit" class="button">Change Roles</button>
+            <button type="submit" class="cancel-button">Delete User</button>
       
+            <p>
+              <!-- <span class="message-success"><a href="qdb-manage-user-unlock.html">(Unlock Account)</a></span> -->
+              <span class="message-success"><a href="qdb-manage-user-reset.html">(Reset Password)</a></span> 
+              <span class="message-success"><a href="qdb-manage-user-roles.html">(Change Roles)</a></span>
+            </p>
+            <p>
+              <span class="message-success"><a href="qdb-manage-user-delete.html">(Delete User)</a></span>  
+            </p>
+            
+          </div>
         </div>
       </article>
 

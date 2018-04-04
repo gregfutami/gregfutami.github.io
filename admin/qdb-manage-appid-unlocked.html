@@ -29,31 +29,77 @@
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="qdb-index.html">Admin Home</a></li>
-        <li class="breadcrumb-item"><a href="qdb-manage-users-search.html">Manage User</a></li>
+        <li class="breadcrumb-item"><a href="qdb-manage-appid-search.html">Manage App ID</a></li>
       </ol>
       
       
       <article class="page">
         <div>
         
-          <h1>Manage QDB Users</h1>
-                
-          <form action="/admin/qdb-index.html" method="get" data-abide novalidate>
+          <h1>Manage App ID</h1>
+          <div class="search-results">
+            <div class="qdb-account-results">
       
-            <p>Search for users by UID, first name, last name, or QDBID.</p>
-      
-            <label title="Search for users by UID, first name, last name, or QDBID." for="sn">
-            <input name="search" type="text" maxlength="40" value="" placeholder="Search" id="search" required>
-            <span class="form-error">You must enter a search criteria</span></label>
-      
-      
-            <button type="submit" class="primary-button">Search</button> <button type="submit" class="button">Cancel</button>
+              <dl>
+                <dt>Application Name</dt>
+                <dd>Bruin Feeding System Application</dd>
+                <dt>Application ID</dt>
+                <dd>mgrbfs</dd>
+                <dt>Dept Code</dt>
+                <dd>1400</dd>
+              </dl>
+              
+              <dl>
+                <dt>Password</dt>
+                <dd>P@ssword1234abcd</dd>
+              </dl>
+              
+              <dl>
+                <dt>Contact Name</dt>
+                <dd>Bono Vox</dd>
+                <dt>Contact Email Address</dt>
+                <dd>bv@it.ucla.edu</dd>
+                <dt>Contact Phone</dt>
+                <dd>(310) 888-2525</dd>
+              </dl>
+              
+              <dl>
+                <dt>Backup Contact Name</dt>
+                <dd>Sarah Connor</dd>
+                <dt>Backup Contact Email Address</dt>
+                <dd>sc@it.ucla.edu</dd>
+                <dt>Backup Contact Phone</dt>
+                <dd>(310) 888-4040</dd>
+              </dl>
+              
+              <dl>
+              <dt>Comments</dt>
+              <dd>this is an old logon ID</dd>
+              </dl>
             
-            <p><span class="message-fail"><a href="qdb-index.html">(cancel)</a></span> <span class="message-success"><a href="qdb-manage-users-results.html">(search results)</a></span></p>
+            </div>
+      <!--       <button type="submit" class="button">Unlock Account</button>  -->
+            <button type="submit" class="button">Reset Password</button>
+            <button type="submit" class="button">Update Account Info</button>
+            <button type="submit" class="cancel-button">Delete App ID</button>
       
-          </form>
+            <p>
+      <!--         <span class="message-success"><a href="qdb-manage-appid-unlock.html">(Unlock Account)</a></span> -->
+              <span class="message-success"><a href="qdb-manage-appid-reset.html">(Reset Password)</a></span> 
+              <span class="message-success"><a href="qdb-manage-appid-update.html">(Update Account Info)</a></span> 
+            </p>
+            <p>       
+              <span class="message-success"><a href="qdb-manage-appid-delete.html">(Delete User)</a></span>  
+            </p>
+            
+          </div>
+          
       
         </div>
+      
+        
+        
+      
       </article>
 
     </div>

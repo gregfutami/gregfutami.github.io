@@ -17,7 +17,7 @@
 
     <header class="page-header" role="banner">
       <section class="page-header-contents logged-in">
-        <span class="logo"><a href="/admin"><img src="../assets/img/logo.png" alt="UCLA MY Logon"></a></span>
+        <span class="logo"><a href="/admin"><img src="../assets/img/logo2.png" alt="UCLA QDB Admin Tool"></a></span>
         <div class="logged-in-info">
           <p class="note-that">You're logged in as: Jen Burin</p>
           <p><a href="./">Logout</a></p>
@@ -26,6 +26,11 @@
     </header>
     
     <div class="page-content">
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="qdb-index.html">Admin Home</a></li>
+        <li class="breadcrumb-item"><a href="qdb-add-user-search.html">Add User</a></li>
+      </ol>
       
       
       <div class="page">
@@ -34,13 +39,15 @@
           <h1>Create a QDB User Account</h1>
           
           <div class="affiliation-choice">
-            <h2>Search Existing User by UCLA UID</h2>
+            <h2>Search Existing Users by UCLA UID</h2>
       
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>
+              Search for an existing record by UID and create a QDB user account from 
+            </p>
             
             <form>
           		<label for="lookup-id-uid">Enter User's UCLA UID</label>
-              <input id="lookup-id-uid" name="lookup-id-uid" class="hero-form-input" type="text" placeholder="123456789" aria-required="true" pattern=".{9,9}" required autofocus data-errormessage="Logon IDs must be between 3 and 15 characters long">
+              <input id="uclaid" name="uclaid" class="hero-form-input" type="text" placeholder="123456789" aria-required="true" pattern="[0-9]{9}" required autofocus data-errormessage="Your UCLA ID number is exactly 9 numbers long.">
           		
               <button type="submit" class="primary-button">Lookup this UID</button> <button type="submit" class="button">Cancel</button>
             </form>
@@ -59,7 +66,7 @@
           <div class="affiliation-choice">
             <h2>Manually Create New QDBID</h2>
       
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Create a new QDBID with user provided information.</p>
       
             <form>
               <button type="submit" class="primary-button">Create New QDBID</button> <button type="submit" class="button">Cancel</button>
@@ -83,30 +90,28 @@
       <div class="footer-wrapper">
   
         <div class="iam-footer-content footer-cta">
-          <div class="cta-content">
-            <header>Get Answers</header>
-            <p>If you have a question, take a look to see if it's been answered in the knowledge base.</p>
+          <!-- <div class="cta-content">
+            <header>Get Help</header>
+            <p>Contact IAMUCLA, email us at <a href="mailto:iamucla@ucla.edu">iamucla@ucla.edu</a></p>
           </div>
-          <p class="cta-button"><a href="https://help.bol.ucla.edu/" target="_blank">Knowledge Base</a></p>
-      	</div>
-      	
+          <p class="cta-button"><a href="https://www.it.ucla.edu/iamucla/" target="_blank">IAMUCLA</a></p> -->
+        </div>
+  
         <div class="iam-footer-content footer-cta">
           <div class="cta-content">
             <header>Get Help</header>
-            <p>Contact Bruin OnLine, email us at <a href="mailto:consult@ucla.edu">consult@ucla.edu</a>, or give us a call at 310-267-<strong>HELP</strong>.</p>
+            <p>Contact IAMUCLA, email us at <a href="mailto:iamucla@ucla.edu">iamucla@ucla.edu</a></p>
           </div>
-          <p class="cta-button"><a href="https://www.it.ucla.edu/bol/contact-bruin-online" target="_blank">Bruin OnLine Help</a></p>
+          <p class="cta-button"><a href="https://www.it.ucla.edu/iamucla/" target="_blank">IAMUCLA</a></p>
       	</div>
-      	
+  
         <div class="iam-footer-content footer-cta">
-          <div class="cta-content">
-            <header>Know the Rules</header>
-            <p>Learn more about the policies and regulations at UCLA.</p>
+          <!-- <div class="cta-content">
+            <header>Get Help</header>
+            <p>Contact IAMUCLA, email us at <a href="mailto:iamucla@ucla.edu">iamucla@ucla.edu</a></p>
           </div>
-          <p class="cta-button"><a href="/ucla-logon-mocks/cms-policies.html" target="_blank">Privacy, Security & Legal</a></p>
-      	</div>
-        
-      </div>
+          <p class="cta-button"><a href="https://www.it.ucla.edu/iamucla/" target="_blank">IAMUCLA</a></p> -->
+        </div>
     </footer>
   
   <script src="../assets/js/app.js"></script>
