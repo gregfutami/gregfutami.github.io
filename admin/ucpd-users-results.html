@@ -17,9 +17,9 @@
 
     <header class="page-header" role="banner">
       <section class="page-header-contents logged-in">
-        <span class="logo"><a href="/admin"><img src="../assets/img/logo2.png" alt="UCLA QDB Admin Tool"></a></span>
+        <span class="logo"><a href="/admin/ucpd-users-search.html"><img src="../assets/img/logo2.png" alt="UCPD Lookup Tool"><p>UCPD Lookup Tool</p></a></span>
         <div class="logged-in-info">
-          <p class="note-that">You're logged in as: Jen Burin</p>
+          <p class="note-that">You're logged in as: Jen Bruin</p>
           <p><a href="./">Logout</a></p>
         </div>
       </section>
@@ -29,7 +29,7 @@
       
       
       <article class="page">
-        <div>
+      <!--   <div> -->
         
           <h1>Search Users</h1>
                 
@@ -37,21 +37,38 @@
       
             <p>Search for users by first name, last name or UID.</p>
       
-            <label title="Enter your last name as it is on file with UCLA. Do not include any suffix." for="sn">
-            <input name="sn" type="text" maxlength="40" value="" placeholder="Search" id="sn" required>
-            <span class="form-error">You must enter your last name to continue.</span></label>
-      
-      
-            <button type="submit" class="primary-button">Search</button> <button type="submit" class="button">Cancel</button>
+            <div class="qdb-search-bar">
+              <label title="Enter your last name as it is on file with UCLA. Do not include any suffix." for="sn">
+              <input name="search" type="text" maxlength="40" value="" placeholder="Search" id="search" required>
+              <span class="form-error">You must enter your last name to continue.</span>
+              <button type="submit" class="primary-button">Search</button>
+              </label>
+            </div><!--  <button type="submit" class="button">Cancel</button> -->
             
-            <p><span class="message-fail"><a href="ucpd-users-search.html">(cancel)</a></span> <span class="message-success"><a href="ucpd-users-results.html">(search user)</a></span></p>
-      
+            <!-- <span class="message-fail"><a href="ucpd-users-search.html">(cancel)</a></span>  -->
           </form>
+      <!--     <br/>
+          <br/>
+          <br/> -->
+      <!--     <span class="message-success" style=""><a href="ucpd-users-results.html">(search user)</a></span> -->
       
-        </div>
+      <!--   </div> -->
+      
         <p class="qdb-results-count">Your search for "bruin" found these records:</p>
+      
+        <dl>
+        <dt><a href="ucpd-users-info.html">Bruin, Joe; 904156234; Student</a></dt>
+        <dt><a href="ucpd-users-info.html">Bruin, Jane; 134580454; Student</a></dt>
+        <dt><a href="ucpd-users-info.html">Meiloch-Blinn-Econopoly, William; 568202923; Employee</a></dt>
+        </dl>
+      
+        <span class="message-success"><a href="ucpd-users-info.html">(select user)</a></span></p>
+      </div>
+      </article>
+      
+      
           
-          <table>
+      <!--     <table>
         
             <thead>
               <tr>
@@ -85,11 +102,7 @@
               </tr>
             </tbody>
         
-          </table>
-          <span class="message-success"><a href="ucpd-users-info.html">(select user)</a></span></p>
-        </div>
-      </div>
-      </article>
+          </table> -->
 
     </div>
   
@@ -99,11 +112,11 @@
       <div class="footer-wrapper">
   
         <div class="iam-footer-content footer-cta">
-          <!-- <div class="cta-content">
-            <header>Get Help</header>
-            <p>Contact IAMUCLA, email us at <a href="mailto:iamucla@ucla.edu">iamucla@ucla.edu</a></p>
+          <div class="cta-content">
+            <header>Get Answers</header>
+            <p>If you have a question, take a look to see if it's been answered in the user documentation.</p>
           </div>
-          <p class="cta-button"><a href="https://www.it.ucla.edu/iamucla/" target="_blank">IAMUCLA</a></p> -->
+          <p class="cta-button"><a href="https://www.it.ucla.edu/iamucla/" target="_blank">Documentation</a></p>
         </div>
   
         <div class="iam-footer-content footer-cta">
@@ -115,11 +128,11 @@
       	</div>
   
         <div class="iam-footer-content footer-cta">
-          <!-- <div class="cta-content">
-            <header>Get Help</header>
-            <p>Contact IAMUCLA, email us at <a href="mailto:iamucla@ucla.edu">iamucla@ucla.edu</a></p>
+          <div class="cta-content">
+            <header>Know The Rules</header>
+            <p>Learn more about the policies and regulations at UCLA.</p>
           </div>
-          <p class="cta-button"><a href="https://www.it.ucla.edu/iamucla/" target="_blank">IAMUCLA</a></p> -->
+          <p class="cta-button"><a href="https://www.it.ucla.edu/iamucla/" target="_blank">Privacy, Security & Legal</a></p>
         </div>
     </footer>
   
@@ -128,3 +141,5 @@
 </body>
 
 </html>
+
+<!-- <img src="../assets/img/logo2.png" alt="UCPD Lookup Tool"> -->
